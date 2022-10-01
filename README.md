@@ -190,15 +190,14 @@ const tableName = "[TABLENAME]";
 
     //add.ejs
     <% if(typeof errors !='undefined') 
-            {%>
-                <% for(let err of errors) 
-                    {%>
-                        <h5 class="text-danger">
-                            <%=err.msg%>
-                        </h5>
-                    <%} 
-                %>
-
-            <%} 
+        {%>
+            <% for(let err of errors) 
+                {%>
+                    <h5 class="text-danger">
+                        <%=err.msg%>
+                    </h5>
+                <%} 
+            %>
+        <%} 
     %>
 ```
